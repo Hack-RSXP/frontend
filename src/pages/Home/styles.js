@@ -3,11 +3,12 @@ import { darken } from 'polished';
 
 export const Container = styled.div`
   background: #b3aad3;
-  height: 100%;
+  min-height: 100vh;
 `;
 
 export const Menu = styled.div`
   padding: 0 30px;
+  z-index: 1;
 `;
 
 export const Content = styled.div`
@@ -119,7 +120,16 @@ export const ImageContent = styled.div`
   }
 `;
 
-export const Image = styled.image`
-  width: 500px;
-  height: 500px;
+export const Image = styled.img`
+  width: 300px;
+  height: 300px;
+`;
+
+export const Image2 = styled.img`
+  width: 70%;
+  height: 60%;
+  position: absolute;
+  top: 15%;
+  right: 0px;
+  z-index: 0;
 `;
